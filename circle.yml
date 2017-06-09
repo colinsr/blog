@@ -13,7 +13,7 @@ compile:
     - echo "disabled"
 
 general:
-  build_dir: blog/cookiemonstercoding.com
+  build_dir: cookiemonstercoding.com
 
 test:
   override:
