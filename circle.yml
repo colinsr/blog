@@ -17,8 +17,7 @@ general:
 
 test:
   override:
-    - bundle install
-      bundle exec jekyll build
+    - bundle exec jekyll build
 
 deployment:
   prod:
