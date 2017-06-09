@@ -23,4 +23,4 @@ deployment:
   prod:
     branch: master
     commands:
-      - aws s3 sync "blog/cookiemonstercoding.com/_site/" s3://cookiemonstercoding.com/ --delete --region us-east-2
+      - aws s3 sync /home/ubuntu/blog/cookiemonstercoding.com/_site/ s3://cookiemonstercoding.com/ --delete --region us-east-2
