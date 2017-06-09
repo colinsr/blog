@@ -1,0 +1,26 @@
+machine:
+  python:
+    version: pypy-2.2.1
+  environment:
+    JEKYLL_ENV: production
+
+dependencies:
+  pre:
+    - pip install awscli
+
+compile:
+  override:
+    - echo "disabled"
+
+general:
+  build_dir: blog/cookiemonstercoding.com
+
+test:
+  override:
+    - bundle exec jekyll build
+
+deployment:
+  prod:
+    branch: master
+    commands:
+      - aws s3 sync cookiemonstercoding.com/_site/ s3://cookiemonstercoding.com/ --delete

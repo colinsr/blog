@@ -1,0 +1,17 @@
+title: Cookie Monster Coding
+author: Colin Detwiller
+description: "Software, IT, and everything in between."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://www.cookiemonstercoding.com" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: colinsr1187
+github_username:  colinsr
+
+# Build settings
+markdown: kramdown
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+disqus:
+    shortname: cookiemonsterrcoding-com
